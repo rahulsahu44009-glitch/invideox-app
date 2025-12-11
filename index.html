@@ -2,14 +2,15 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Invideox App</title>
+  <title>InvideoX</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Invideox App</h1>
-  <input id="story" placeholder="Enter story">
-  <button onclick="generate()">Generate Video</button>
-  <pre id="output"></pre>
+  <h1>InvideoX Video Generator</h1>
+  <textarea id="story" placeholder="Yahan story likho..."></textarea>
+  <button onclick="generateVideo()">Generate Video</button>
+  <p id="status"></p>
+  <video id="resultVideo" controls style="display:none; width:100%; max-width:400px;"></video>
   <script src="script.js"></script>
 </body>
 </html>
