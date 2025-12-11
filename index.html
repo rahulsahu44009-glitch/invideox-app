@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>InvideoX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvideoX Video Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <h1>InvideoX Video Generator</h1>
-  <textarea id="story" placeholder="Yahan story likho..."></textarea>
+
+  <textarea id="story" placeholder="Yahan story likho..." rows="6"></textarea>
+
   <button onclick="generateVideo()">Generate Video</button>
+
   <p id="status"></p>
-  <video id="resultVideo" controls style="display:none; width:100%; max-width:400px;"></video>
+
+  <!-- IMPORTANT: Video player -->
+  <video id="resultVideo" controls style="display:none; width:300px; margin-top:20px;"></video>
+
   <script src="script.js"></script>
+
 </body>
 </html>
